@@ -1,7 +1,7 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import tseslint from 'typescript-eslint'
-import { defineConfig } from 'eslint/config'
+import js from '@eslint/js';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
     {
@@ -22,7 +22,7 @@ export default defineConfig([
                 'warn',
                 {
                     arrowParens: 'always',
-                    semi: false,
+                    semi: true,
                     trailingComma: 'none',
                     tabWidth: 4,
                     endOfLine: 'auto',
@@ -35,4 +35,4 @@ export default defineConfig([
         },
         ignores: ['**/node_modules/', '**/dist/']
     }
-])
+]);
